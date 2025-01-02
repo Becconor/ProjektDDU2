@@ -10,10 +10,15 @@
 
 body {
     height: 100vh;
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 nav {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
 
 header {
@@ -37,4 +42,15 @@ header {
 #creator input {
     width: 50px;
     text-align: center;
+}
+
+#controls {
+    display: flex;
+    flex-direction: column;
+}
+
+#links {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
 }

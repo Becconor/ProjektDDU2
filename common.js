@@ -1,3 +1,24 @@
+// skapa vart länken till min hemsida och github ska ligga
+let footerDom = document.getElementById("links");
+
+let webLink = document.createElement("a");
+webLink.textContent = "Webside";
+webLink.href = "../index.html";
+footerDom.appendChild(webLink);
+
+let githubLink = document.createElement("a");
+githubLink.textContent = "GitHub";
+githubLink.href = "https://github.com/Becconor/ProjektDDU2.git";
+footerDom.appendChild(githubLink);
+
+
+
+
+
+
+
+
+
 // Navigation till hem
 let navHome = document.getElementById("home");
 
