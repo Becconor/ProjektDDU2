@@ -24,4 +24,17 @@ header {
 
 .control {
     display: flex;
+    gap: 10px;
+    height: 35px;
+    margin: 10px;
+}
+
+#creator p {
+    display: flex;
+    align-items: center;
+}
+
+#creator input {
+    width: 50px;
+    text-align: center;
 }
