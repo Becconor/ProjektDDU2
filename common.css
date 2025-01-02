@@ -31,7 +31,8 @@ header {
     display: flex;
     gap: 10px;
     height: 35px;
-    margin: 10px;
+    margin: 10px 0px 0px;
+    box-sizing: border-box;
 }
 
 #creator p {
@@ -53,4 +54,28 @@ header {
     display: flex;
     gap: 10px;
     justify-content: center;
+    align-self: baseline;
+}
+
+#numberBoxes {
+    box-sizing: border-box;
+    margin: 10px 0px;
+    height: auto;
+
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#numberBoxes div {
+    background-color: rgb(227, 227, 227);
+    border-radius: 5px;
+    height: 45px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 45px;
 }

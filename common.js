@@ -15,10 +15,6 @@ footerDom.appendChild(githubLink);
 
 
 
-
-
-
-
 // Navigation till hem
 let navHome = document.getElementById("home");
 
@@ -26,6 +22,8 @@ let homeLink = document.createElement("a");
 homeLink.textContent = "Home";
 homeLink.href = "../index.html";
 navHome.appendChild(homeLink);
+
+
 
 
 
@@ -43,3 +41,23 @@ createElement.appendChild(creatorInput);
 let creatorButton = document.createElement("button");
 creatorButton.textContent = "Create";
 createElement.appendChild(creatorButton)
+
+
+
+
+
+// skapa boxarna för griden
+function randomInt(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
+};
+
+function createNumberBoxes() {
+    for (let i = 0; i < 95; i++) {
+        let numberBoxes = document.getElementById("numberBoxes");
+        let boxDiv = document.createElement("div");
+        numberBoxes.appendChild(boxDiv);
+        boxDiv.textContent = randomInt(1, 95);
+    }
+};
+
+createNumberBoxes();
