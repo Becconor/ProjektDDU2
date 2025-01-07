@@ -1,0 +1,38 @@
+@font-face {
+    font-family: "Play";
+    src: url("Fonts/Play/Play-Regular.ttf");
+}
+
+* {
+    font-family: Play;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+
+#container {
+    margin: 0;
+    height: 100vh;
+}
+
+nav {
+    height: 10%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#start {
+    height: 80%;
+}
+
+footer {
+    height: 10%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
