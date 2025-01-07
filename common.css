@@ -36,3 +36,50 @@ footer {
     align-items: center;
     gap: 10px;
 }
+
+
+#creator input {
+    width: 70px;
+    height: 30px;
+    text-align: center;
+}
+
+#creator button {
+    height: 30px;
+    text-align: center;
+}
+
+#creator {
+    height: 45px;
+}
+
+.control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+#numbers {
+    height: auto;
+    max-width: 945px;
+    margin: 10px auto 0;
+
+
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.boxes {
+    background-color: lightgray;
+    border-radius: 5px;
+    height: 45px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 45px;
+}
