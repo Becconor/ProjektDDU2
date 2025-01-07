@@ -1,0 +1,29 @@
+.boxes:hover {
+    background-color: rgba(64, 224, 208, 0.3);
+}
+
+/* knapparna för remove */
+#remove p {
+    border: 1px solid black;
+    height: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#remove button {
+    height: 30px;
+}
+
+#newNumber {
+    width: 60px;
+}
+
+#removeNumber {
+    width: 250px;
+}
+
+.clicked {
+    background-color: turquoise;
+}
