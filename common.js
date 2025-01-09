@@ -1,4 +1,3 @@
-// skapa hemknapp
 function homeNavigation() {
     let navHome = document.getElementById("home");
 
@@ -10,7 +9,6 @@ function homeNavigation() {
 homeNavigation();
 
 
-// skapa shuffle knapp till griden av siffer boxar
 let createElement = document.getElementById("creator");
 
 let creatorText = document.createElement("p");
@@ -26,13 +24,11 @@ creatorButton.textContent = "Create";
 createElement.appendChild(creatorButton);
 
 
-// skapar random siffror
 function randomInt(min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
 };
 
 
-// skapar boxarna med siffror på sidan
 function createNumberBoxes(value) {
     let numberBoxes = document.getElementById("numbers");
     numberBoxes.innerHTML = "";
@@ -64,7 +60,6 @@ function createNumberBoxes(value) {
 };
 
 
-// skapar responsiv knapp som ger nya random nummer till griden vid knapp tryck
 creatorButton.addEventListener("click", function (event) {
     createNumberBoxes(creatorInput.value);
 });

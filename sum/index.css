@@ -1,23 +1,4 @@
-#first,
-#second {
-    height: 45px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-
-p {
-    margin: 0;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .textBoxes {
-    border: 1px solid black;
     width: 100px;
     height: 30px;
 }

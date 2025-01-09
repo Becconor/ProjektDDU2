@@ -10,6 +10,7 @@
 }
 
 
+
 #container {
     margin: 0;
     height: 100vh;
@@ -39,7 +40,7 @@ footer {
 
 
 
-/* skapa boxarna */
+
 #creator input {
     width: 70px;
     height: 30px;
@@ -51,20 +52,30 @@ footer {
     text-align: center;
 }
 
-#creator {
-    height: 45px;
-}
-
 .control {
+    height: 45px;
+
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
 }
 
+.textBoxes {
+    border: 1px solid black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    margin: 0;
+}
 
 
-/* boxarna */
+
+
 #numbers {
     height: auto;
     max-width: 945px;

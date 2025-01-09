@@ -1,39 +1,8 @@
-#first {
-    height: 45px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-
 #second {
     height: auto;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-
-p {
-    margin: 0;
-}
-
-#first p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#more {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .textBoxes {
-    border: 1px solid black;
     width: 500px;
 }
 

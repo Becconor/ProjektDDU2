@@ -19,7 +19,9 @@ function sum() {
             markedCounter += Number(box.textContent);
 
             sumOfMarked.textContent = markedCounter;
-        }, { once: true });
+        });
+
+
 
 
         reset.addEventListener("click", function () {
