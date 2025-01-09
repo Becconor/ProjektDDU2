@@ -15,13 +15,12 @@ function sum() {
 
     for (let box of boxes) {
         box.addEventListener("click", function () {
-            box.classList.add("clicked");
-            markedCounter += Number(box.textContent);
-
-            sumOfMarked.textContent = markedCounter;
+            if (!box.classList.contains("clicked")) {
+                box.classList.add("clicked");
+                markedCounter += Number(box.textContent);
+                sumOfMarked.textContent = markedCounter;
+            }
         });
-
-
 
 
         reset.addEventListener("click", function () {

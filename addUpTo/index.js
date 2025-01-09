@@ -10,14 +10,15 @@ function addUpTo() {
             box.classList.remove("clicked");
         }
 
-        for (let box of boxes) {
-            for (let box2 of boxes) {
-                let value1 = Number(box.innerText);
-                let value2 = Number(box2.innerText);
+        for (let i = 0; i < boxes.length; i++) {
+            let value1 = Number(boxes[i].innerText);
+
+            for (let j = i + 1; j < boxes.length; j++) {
+                let value2 = Number(boxes[j].innerText);
 
                 if (value1 + value2 === numberText) {
-                    box.classList.add("clicked");
-                    box2.classList.add("clicked");
+                    boxes[i].classList.add("clicked");
+                    boxes[j].classList.add("clicked");
                     return;
                 }
             }
