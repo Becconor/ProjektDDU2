@@ -2,11 +2,13 @@ function repetitions() {
     let boxes = document.querySelectorAll(".boxes");
     let allMostElement = document.getElementById("allMost");
     let moreElement = document.getElementById("more");
+
     let arrayOfObjects = [];
     let result = [];
     let missingNumbers = [];
+    let numbers = [];
+
     let maxRepetitions = 0;
-    let numbers = "";
 
     for (let box of boxes) {
         let counter = 0;
@@ -53,23 +55,17 @@ function repetitions() {
 
     for (let i = 0; i < result.length; i++) {
         let obj = result[i];
-
-        if (i > 0) {
-            numbers += ", ";
-        }
-
-        numbers += obj.number;
+        numbers.push(obj.number);
     }
 
-    allMostElement.textContent = numbers + " (Repeated " + maxRepetitions + " times)";
+    allMostElement.textContent = numbers.join(", ") + " (Repeated " + maxRepetitions + " times)";
 
 
-    for (let i = 0; i < boxes.length; i++) {
-        let box = boxes[i];
+    for (let box of boxes) {
         let number = Number(box.textContent);
 
-        for (let j = 0; j < result.length; j++) {
-            if (result[j].number === number) {
+        for (let i = 0; i < result.length; i++) {
+            if (result[i].number === number) {
                 box.classList.add("highlight");
                 break;
             }

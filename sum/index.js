@@ -1,7 +1,10 @@
 function sum() {
     let boxes = document.querySelectorAll(".boxes");
     let reset = document.getElementById("reset");
+
     let sumOfMarked = document.getElementById("text");
+    sumOfMarked.textContent = "-";
+
     let sumCounter = 0;
     let markedCounter = 0;
 
@@ -21,17 +24,16 @@ function sum() {
                 sumOfMarked.textContent = markedCounter;
             }
         });
-
-
-        reset.addEventListener("click", function () {
-            markedCounter = 0;
-            sumOfMarked.textContent = "-";
-
-            for (let sameBox of boxes) {
-                sameBox.classList.remove("clicked");
-            }
-        });
     }
+
+    reset.addEventListener("click", function () {
+        markedCounter = 0;
+        sumOfMarked.textContent = "-";
+
+        for (let box of boxes) {
+            box.classList.remove("clicked");
+        }
+    });
 };
 
 sum();

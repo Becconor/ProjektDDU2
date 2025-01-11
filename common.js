@@ -34,7 +34,6 @@ function createNumberBoxes(value) {
     numberBoxes.innerHTML = "";
 
     for (let i = 0; i < value; i++) {
-        let numberBoxes = document.getElementById("numbers");
         let boxDiv = document.createElement("div");
         boxDiv.classList.add("boxes");
         numberBoxes.appendChild(boxDiv);
