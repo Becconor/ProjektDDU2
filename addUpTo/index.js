@@ -11,10 +11,10 @@ function addUpTo() {
         }
 
         for (let i = 0; i < boxes.length; i++) {
-            let value1 = Number(boxes[i].innerText);
+            let value1 = Number(boxes[i].textContent);
 
             for (let j = i + 1; j < boxes.length; j++) {
-                let value2 = Number(boxes[j].innerText);
+                let value2 = Number(boxes[j].textContent);
 
                 if (value1 + value2 === numberText) {
                     boxes[i].classList.add("clicked");
