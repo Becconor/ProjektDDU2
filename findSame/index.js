@@ -15,21 +15,16 @@ function findSame() {
                     sameBox.classList.remove("clicked");
                     text.textContent = "";
                 }
-
-                text.textContent = `${counter} copies of the number ${box.textContent}`;
             }
+
+            text.textContent = `${counter} copies of the number ${box.textContent}`;
         });
 
         reset.addEventListener("click", function () {
             text.textContent = "Click on a number to find copies";
-
-            for (let sameBox of boxes) {
-                sameBox.classList.remove("clicked");
-                sameBox.textContent = sameBox.textContent;
-            }
+            box.classList.remove("clicked");
         });
     };
-
 };
 
 findSame();

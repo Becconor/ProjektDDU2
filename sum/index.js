@@ -24,16 +24,13 @@ function sum() {
                 sumOfMarked.textContent = markedCounter;
             }
         });
-    }
 
-    reset.addEventListener("click", function () {
-        markedCounter = 0;
-        sumOfMarked.textContent = "-";
-
-        for (let box of boxes) {
+        reset.addEventListener("click", function () {
+            markedCounter = 0;
+            sumOfMarked.textContent = "-";
             box.classList.remove("clicked");
-        }
-    });
+        });
+    }
 };
 
 sum();
