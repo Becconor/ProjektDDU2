@@ -3,6 +3,8 @@ function addUpTo() {
     let findPar = document.getElementById("findTwo");
     let numberInput = document.getElementById("numberInput");
 
+    numberInput.value = 179;
+
     findPar.addEventListener("click", function () {
         let numberText = Number(numberInput.value);
 
