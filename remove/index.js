@@ -11,7 +11,7 @@ function remove() {
 
 
     newNumberButton.addEventListener("click", function () {
-        newNumber.textContent = randomInt(1, 95)
+        newNumber.textContent = randomInt(1, 100)
         newNumberTextBox = Number(newNumber.textContent);
         counter = 0;
 
@@ -22,11 +22,7 @@ function remove() {
             }
         }
 
-        let foundMatch = false;
-
-        if (!foundMatch) {
-            removeNumber.textContent = "-";
-        }
+        removeNumber.textContent = "-";
     });
 
 
@@ -42,7 +38,7 @@ function remove() {
             }
         }
 
-        if (foundMatch) {
+        if (foundMatch == true) {
             removeNumber.textContent = `${newNumber.textContent} removed ${counter} times`;
         } else {
             removeNumber.textContent = "Nothing to remove";
